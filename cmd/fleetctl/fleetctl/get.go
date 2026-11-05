@@ -1678,9 +1678,9 @@ func runGetMDMAB(c *cli.Context) error {
 		return err
 	}
 
-	tokens, err := client.ListABMTokens()
+	tokens, err := client.ListABTokens()
 	if err != nil {
-		return fmt.Errorf("could not list ABM tokens: %w", err)
+		return fmt.Errorf("could not list AB tokens: %w", err)
 	}
 
 	if len(tokens) == 0 {
